@@ -1,0 +1,513 @@
+
+<!-- saved from url=(0086)http://wpilib.screenstepslive.com/s/4485/m/50711/l/481750-using-grip-for-the-2016-game -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Using GRIP for the 2016 game | GRIP - Graphical Image Processing | 2016 FRC Control System</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=yes">
+	
+	<link href="./Using GRIP for the 2016 game _ GRIP - Graphical Image Processing _ 2016 FRC Control System_files/screensteps-site-layout.css" media="screen" rel="stylesheet" type="text/css">
+
+	<style type="text/css" media="screen">
+ .code_sample {
+	width:auto;border:1px solid #d4d4d4;background-color:#f1f1f1;color:#444444;padding:5px;margin:0;
+}
+
+.code_sample.java {
+   color: #0000ff;
+}
+
+.code_sample.cpp {
+   color: #ff0000;
+}
+</style>
+	<link type="text/css" rel="stylesheet" href="./Using GRIP for the 2016 game _ GRIP - Graphical Image Processing _ 2016 FRC Control System_files/screensteps-responsive.css">	
+	<link type="text/css" rel="stylesheet" href="./Using GRIP for the 2016 game _ GRIP - Graphical Image Processing _ 2016 FRC Control System_files/bootstrap.min.css" media="all">
+	<link type="text/css" rel="stylesheet" href="./Using GRIP for the 2016 game _ GRIP - Graphical Image Processing _ 2016 FRC Control System_files/site.min.css" media="all">
+
+	<script async="" src="http://www.google-analytics.com/analytics.js"></script><script type="text/javascript" src="./Using GRIP for the 2016 game _ GRIP - Graphical Image Processing _ 2016 FRC Control System_files/jquery.min.js"></script><style type="text/css"></style>
+	<script type="text/javascript" src="./Using GRIP for the 2016 game _ GRIP - Graphical Image Processing _ 2016 FRC Control System_files/bootstrap.min.js"></script>
+	<script src="./Using GRIP for the 2016 game _ GRIP - Graphical Image Processing _ 2016 FRC Control System_files/application-02443bbdeba7d8dce17da5c8134048cb.js" type="text/javascript"></script>
+  <meta content="authenticity_token" name="csrf-param">
+<meta content="z1i57l+xnaK3+TwID3JgHlVJJihNlERmcIGyIrbPZ1c=" name="csrf-token">
+  <script type="text/javascript" charset="utf-8">
+    jQuery(document).ready(function(){
+      jQuery("a[rel^='prettyPhoto']").prettyPhoto({
+    	  show_title: false,
+    	  social_tools: false,
+    	  theme: 'light_rounded',
+    	  deeplinking: false
+    	});
+      jQuery('.screensteps-mobile-nav').click(function(){
+        jQuery('#navigation-container, #screensteps-admin-bar, #screensteps-sidebar').slideToggle(500);
+      });
+      loadAdminNav('4485')
+    });
+  </script>
+  <script type="text/javascript"> 
+jQuery(document).ready(function($) {
+           (function(){
+        var s='hubspotutk',r,c=((r=new RegExp('(^|; )'+s+'=([^;]*)').exec(document.cookie))?r[2]:(function(){var c='0123456789abcdef',s=[],i=0;for(i=0;i<32;i++)s[i]=c[Math.floor(Math.random()*0x10)];return s.join('');})()),w=window;w[s]=w[s]||c,
+            hsjs = document.createElement("script"), el=document.getElementById("hs-cta-c93492d8-44c2-4f59-b4ea-c96dcacc7579");
+        hsjs.type = "text/javascript";hsjs.async = true;
+        hsjs.src = "//cta-service-cms2.hubspot.com/cs/loader-v2.js?pg=c93492d8-44c2-4f59-b4ea-c96dcacc7579&pid=120141&hsutk=" + encodeURIComponent(c);
+        (document.getElementsByTagName("head")[0]||document.getElementsByTagName("body")[0]).appendChild(hsjs);
+        try{el.style.visibility="hidden";}catch(err){}
+        setTimeout(function() {try{el.style.visibility="visible";}catch(err){}}, 2500);
+    })();
+       });
+
+
+</script>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-56255036-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+
+	
+
+<style>
+p.search-form {
+    height: auto !important;
+    box-sizing: content-box !important;
+}
+@media screen and (max-width: 640px) {
+.container {
+    width: 620px;
+}
+
+@media screen and (max-width: 480px) {
+.container {
+    width: 460px;
+}
+
+@media screen and (max-width: 390px) {
+.container {
+    width: 320px;
+}
+
+
+}
+</style>	
+<script type="text/javascript" charset="UTF-8" src="./Using GRIP for the 2016 game _ GRIP - Graphical Image Processing _ 2016 FRC Control System_files/wfDCAa0TGjcgXyXISk1PPgTPMD9__aXTIGrk05Dh95U.js"></script><script type="text/javascript" async="" src="http://cta-service-cms2.hubspot.com/cs/loader-v2.js?pg=c93492d8-44c2-4f59-b4ea-c96dcacc7579&amp;pid=120141&amp;hsutk=bed00d48940d62ecddceadd75cad05a2"></script><style type="text/css">.recaptchatable td img{display:block}.recaptchatable .recaptcha_r1_c1{background:url('https://www.google.com/recaptcha/api/img/red/sprite.png') 0 -63px no-repeat;width:318px;height:9px}.recaptchatable .recaptcha_r2_c1{background:url('https://www.google.com/recaptcha/api/img/red/sprite.png') -18px 0 no-repeat;width:9px;height:57px}.recaptchatable .recaptcha_r2_c2{background:url('https://www.google.com/recaptcha/api/img/red/sprite.png') -27px 0 no-repeat;width:9px;height:57px}.recaptchatable .recaptcha_r3_c1{background:url('https://www.google.com/recaptcha/api/img/red/sprite.png') 0 0 no-repeat;width:9px;height:63px}.recaptchatable .recaptcha_r3_c2{background:url('https://www.google.com/recaptcha/api/img/red/sprite.png') -18px -57px no-repeat;width:300px;height:6px}.recaptchatable .recaptcha_r3_c3{background:url('https://www.google.com/recaptcha/api/img/red/sprite.png') -9px 0 no-repeat;width:9px;height:63px}.recaptchatable .recaptcha_r4_c1{background:url('https://www.google.com/recaptcha/api/img/red/sprite.png') -43px 0 no-repeat;width:171px;height:49px}.recaptchatable .recaptcha_r4_c2{background:url('https://www.google.com/recaptcha/api/img/red/sprite.png') -36px 0 no-repeat;width:7px;height:57px}.recaptchatable .recaptcha_r4_c4{background:url('https://www.google.com/recaptcha/api/img/red/sprite.png') -214px 0 no-repeat;width:97px;height:57px}.recaptchatable .recaptcha_r7_c1{background:url('https://www.google.com/recaptcha/api/img/red/sprite.png') -43px -49px no-repeat;width:171px;height:8px}.recaptchatable .recaptcha_r8_c1{background:url('https://www.google.com/recaptcha/api/img/red/sprite.png') -43px -49px no-repeat;width:25px;height:8px}.recaptchatable .recaptcha_image_cell center img{height:57px}.recaptchatable .recaptcha_image_cell center{height:57px}.recaptchatable .recaptcha_image_cell{background-color:white;height:57px}#recaptcha_area,#recaptcha_table{width:318px!important}.recaptchatable,#recaptcha_area tr,#recaptcha_area td,#recaptcha_area th{margin:0!important;border:0!important;padding:0!important;border-collapse:collapse!important;vertical-align:middle!important}.recaptchatable *{margin:0;padding:0;border:0;font-family:helvetica,sans-serif;font-size:8pt;color:black;position:static;top:auto;left:auto;right:auto;bottom:auto}.recaptchatable #recaptcha_image{position:relative;margin:auto}.recaptchatable #recaptcha_image #recaptcha_challenge_image{display:block}.recaptchatable #recaptcha_image #recaptcha_ad_image{display:block;position:absolute;top:0}.recaptchatable img{border:0!important;margin:0!important;padding:0!important}.recaptchatable a,.recaptchatable a:hover{cursor:pointer;outline:none;border:0!important;padding:0!important;text-decoration:none;color:blue;background:none!important;font-weight:normal}.recaptcha_input_area{position:relative!important;width:153px!important;height:45px!important;margin-left:7px!important;margin-right:7px!important;background:none!important}.recaptchatable label.recaptcha_input_area_text{margin:0!important;padding:0!important;position:static!important;top:auto!important;left:auto!important;right:auto!important;bottom:auto!important;background:none!important;height:auto!important;width:auto!important}.recaptcha_theme_red label.recaptcha_input_area_text,.recaptcha_theme_white label.recaptcha_input_area_text{color:black!important}.recaptcha_theme_blackglass label.recaptcha_input_area_text{color:white!important}.recaptchatable #recaptcha_response_field{width:153px!important;position:relative!important;bottom:7px!important;padding:0!important;margin:15px 0 0 0!important;font-size:10pt}.recaptcha_theme_blackglass #recaptcha_response_field,.recaptcha_theme_white #recaptcha_response_field{border:1px solid gray}.recaptcha_theme_red #recaptcha_response_field{border:1px solid #cca940}.recaptcha_audio_cant_hear_link{font-size:7pt;color:black}.recaptchatable{line-height:1!important}#recaptcha_instructions_error{color:red!important}.recaptcha_only_if_privacy{float:right;text-align:right}#recaptcha-ad-choices{position:absolute;height:15px;top:0;right:0}#recaptcha-ad-choices img{height:15px}.recaptcha-ad-choices-collapsed{width:30px;height:15px;display:block}.recaptcha-ad-choices-expanded{width:75px;height:15px;display:none}#recaptcha-ad-choices:hover .recaptcha-ad-choices-collapsed{display:none}#recaptcha-ad-choices:hover .recaptcha-ad-choices-expanded{display:block}
+
+.recaptcha_is_showing_audio .recaptcha_only_if_image,.recaptcha_isnot_showing_audio .recaptcha_only_if_audio,.recaptcha_had_incorrect_sol .recaptcha_only_if_no_incorrect_sol,.recaptcha_nothad_incorrect_sol .recaptcha_only_if_incorrect_sol{display:none !important}</style><script type="text/javascript" src="./Using GRIP for the 2016 game _ GRIP - Graphical Image Processing _ 2016 FRC Control System_files/reload"></script></head>
+
+<body>
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <!-- Color Strip -->
+        <div class="color-strip">
+            <div class="fgreen"></div>
+            <div class="fred"></div>
+            <div class="forange"></div>
+            <div class="fblue"></div>
+        </div>
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false" aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a href="http://wpilib.screenstepslive.com/s/4485/m/50711/l/481750-using-grip-for-the-2016-game#">
+                    <div class="navbar-brand" href="#"><strong>FRC Control System</strong>
+					<ul class="pull-right">          
+						  
+					</ul></div>
+                </a>
+            </div>
+            <div id="navbar-collapse" class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+					
+						<li><a href="http://www.firstinspires.org/resource-library/frc/competition-manual-qa-system">FRC Game Manual</a></li>
+					
+						<li><a href="http://forums.usfirst.org/">Technical Help</a></li>
+					
+						<li><a href="http://www.firstinspires.org/robotics/frc">FRC Home</a></li>
+					
+                </ul>
+				<ul class="nav navbar-nav navbar-right">
+					<a href="http://www.wpi.edu/"><img src="./Using GRIP for the 2016 game _ GRIP - Graphical Image Processing _ 2016 FRC Control System_files/WPI_Inst_Prim_FulClr_Rev.png" style="margin-top: 5px; max-width: 100%; height: 40; !important;"></a>
+				</ul>
+			</div>
+        </div>
+    </nav>
+
+    <div class="flex" id="flex">
+        <div class="whitebg">
+            <!--<div class="jumbotron">
+
+                 Main jumbotron for a primary marketing message or call to action
+                <div class="container">
+                    <h2><em>FIRST</em> Robotics Competition ... </h2>
+                    <p></p>
+                    <div class="row">
+                        <form class="col-xs-11 col-sm-7 col-md-7 col-lg-7">
+                            <div class="input-group">
+                                <input type="text" class="form-control" name="search" placeholder="Search for...">
+                                <span class="input-group-btn">
+                                    <button class="btn btn-success btn-search" type="button">Search »</button>
+                                </span>
+                            </div>
+                        </form>
+                        <div class="col-md-3">
+                            <a class="btn btn-warning" href="#" role="button">Button! »</a>
+                        </div>
+                    </div>
+                </div>
+				</div>-->
+
+            <!-- Main Content Begin -->
+            <div class="container" id="container" style="margin-top: 10px;">
+			  <script type="text/javascript">
+	jQuery(document).ready(function(jQuery) {
+		var lesson_id = 481750;
+		var section_id = 150895;
+		var expansion = 'none';
+		switch(expansion) {
+			case 'none':
+				jQuery('ul.nested-chapter-lessons').hide();
+				break;
+			case 'all':
+				jQuery('ul.nested-chapter-lessons').show();
+				break;
+			case 'one':
+				jQuery('ul.nested-chapter-lessons').hide();
+				jQuery('li.chapter-list-item[data-section-id="' + section_id + '"] ul.nested-chapter-lessons').show();
+				break;
+		}
+		jQuery('li.chapter-list-item[data-section-id="' + section_id + '"]').addClass('here');
+		jQuery('li[data-lesson-id="' + lesson_id + '"]').addClass('here');
+	});
+</script>
+<div class="left-sidebar lesson manual-lesson" id="screensteps-content-wrapper">
+<div aria-label="breadcrumb" aria-level="3" id="screensteps-breadcrumb"><a href="http://wpilib.screenstepslive.com/s/4485">2016 FRC Control System</a><a href="http://wpilib.screenstepslive.com/s/4485/m/50711">GRIP - Graphical Image Processing</a> <span class="chapter-breadcrumb"><a href="http://wpilib.screenstepslive.com/s/4485/m/50711/c/150895">Articles</a></span>Using GRIP for the 2016 game</div>
+<div aria-label="sidebar" id="screensteps-sidebar" role="complementary">
+<div class="screensteps-sidebar-widget" id="screensteps-rss">
+<p><a href="http://wpilib.screenstepslive.com/s/4485.rss">Subscribe to our feed</a></p>
+</div>
+<div class="screensteps-sidebar-widget" id="sidebar-search" role="search">
+<!-- /%h3= search_text -->
+<form accept-charset="UTF-8" action="http://wpilib.screenstepslive.com/s/4485/searches" method="get"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="✓"></div>
+<input class="search-field" id="text" name="text" title="Search" type="text">
+<input class="search-submit" name="commit" type="submit" value="search">
+</form>
+
+</div>
+<div class="screensteps-sidebar-widget" id="sidebar-chapters">
+<h3>Topics</h3>
+<ul id="sidebar-chapter-list">
+<li class="chapter-list-item here" data-section-id="150895">
+<a class="toggle-lessons" href="http://wpilib.screenstepslive.com/s/4485/m/50711/c/150895" role="Accordion">
+<span class="chapter-link">Articles</span>
+<span class="chapter-count">
+&nbsp;5
+</span>
+</a>
+<ul class="nested-chapter-lessons" style="display: none;">
+<li data-lesson-id="463566"><a href="http://wpilib.screenstepslive.com/s/4485/m/50711/l/463566-grip-alpha-preview">GRIP Alpha Preview</a></li>
+<li data-lesson-id="463810"><a href="http://wpilib.screenstepslive.com/s/4485/m/50711/l/463810-processing-images-from-the-frc-2014-game">Processing images from the FRC 2014 game</a></li>
+<li data-lesson-id="472999"><a href="http://wpilib.screenstepslive.com/s/4485/m/50711/l/472999-processing-images-from-the-2009-game">Processing images from the 2009 game</a></li>
+<li data-lesson-id="479908"><a href="http://wpilib.screenstepslive.com/s/4485/m/50711/l/479908-reading-array-values-published-by-networktables">Reading array values published by NetworkTables</a></li>
+<li data-lesson-id="481750" class="here"><a href="./Using GRIP for the 2016 game _ GRIP - Graphical Image Processing _ 2016 FRC Control System_files/Using GRIP for the 2016 game _ GRIP - Graphical Image Processing _ 2016 FRC Control System.html">Using GRIP for the 2016 game</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="screensteps-sidebar-widget" id="sidebar-message">
+<p>Documentation site powered by <a href="http://bluemangolearning.com/screenstepslive">ScreenSteps Live</a></p>
+<p><span class="hs-cta-wrapper" id="hs-cta-wrapper-c93492d8-44c2-4f59-b4ea-c96dcacc7579"><br>
+    <span class="hs-cta-node hs-cta-c93492d8-44c2-4f59-b4ea-c96dcacc7579" id="hs-cta-c93492d8-44c2-4f59-b4ea-c96dcacc7579" style="visibility: visible;"><br>
+        <!--[if lte IE 8]><div id="hs-cta-ie-element" ></div><![endif]--><br>
+        <a href="http://bluemangolearning.com/screenstepslive" target="_blank"><img class="hs-cta-img" id="hs-cta-img-c93492d8-44c2-4f59-b4ea-c96dcacc7579" style="border-width:0px;width:149px;height:60px;" alt="learn-more-about-brscreensteps-live" src="./Using GRIP for the 2016 game _ GRIP - Graphical Image Processing _ 2016 FRC Control System_files/9449bbec-cf7b-40a7-a6d2-67b55aa73d00.png"></a><br>
+    </span><br>
+</span><br>
+<a href="http://wp.wpi.edu/wpilib/wpilib-supporters">WPILib Supporters</a></p>
+
+</div>
+<div class="screensteps-sidebar-widget" id="lesson-sidebar-info">
+<h3>Last Updated</h3><p>Jan 09, 2016</p>
+<div class="pdf-container">
+<p><a href="http://wpilib.screenstepslive.com/s/4485/m/50711/l/481750-using-grip-for-the-2016-game/pdf" class="pdf lesson-pdf">Download Article PDF</a></p>
+<p><a href="http://wpilib.screenstepslive.com/s/4485/m/50711/pdf" class="pdf lesson-pdf">Download Manual PDF</a></p>
+</div>
+</div>
+<div class="screensteps-sidebar-widget" id="other-assets">
+<h3>Other Resources</h3>
+<ul class="asset-list with-divider">
+<li class="divider"><h4>Getting Started</h4></li>
+<li class="manual"><a href="http://wpilib.screenstepslive.com/s/4485/m/13503">Getting Started with the 2016 Control System</a></li>
+<li class="manual"><a href="http://wpilib.screenstepslive.com/s/4485/m/24166">2016 Control System Hardware</a></li>
+<li class="manual"><a href="http://wpilib.screenstepslive.com/s/4485/m/24192">FRC Driver Station</a></li>
+<li class="divider"><h4>Programming Languages</h4></li>
+<li class="manual"><a href="http://wpilib.screenstepslive.com/s/4485/m/13810">FRC C++ Programming</a></li>
+<li class="manual"><a href="http://wpilib.screenstepslive.com/s/4485/m/13809">FRC Java Programming</a></li>
+<li class="manual"><a href="http://wpilib.screenstepslive.com/s/4485/m/13811">FRC LabVIEW Programming</a></li>
+<li class="manual"><a href="http://wpilib.screenstepslive.com/s/4485/m/24194">Vision Processing</a></li>
+<li class="divider"><h4>WPI Tools</h4></li>
+<li class="manual"><a href="http://wpilib.screenstepslive.com/s/4485/m/26401">SmartDashboard</a></li>
+<li class="manual"><a href="http://wpilib.screenstepslive.com/s/4485/m/26402">RobotBuilder</a></li>
+<li class="manual"><a href="http://wpilib.screenstepslive.com/s/4485/m/23353">Using FRCSim with C++ and Java</a></li>
+<li class="manual"><a href="http://wpilib.screenstepslive.com/s/4485/m/50711">GRIP - Graphical Image Processing</a></li>
+<li class="manual"><a href="http://wpilib.screenstepslive.com/s/4485/m/wpilib_source">WPILib Source</a></li>
+<li class="divider"><h4>Troubleshooting</h4></li>
+<li class="manual"><a href="http://wpilib.screenstepslive.com/s/4485/m/24193">Troubleshooting</a></li>
+</ul>
+</div>
+<div class="screensteps-sidebar-widget" id="recent-updates">
+<h3>Recent Updates</h3>
+<ul id="recent-updates-list">
+<li><a href="http://wpilib.screenstepslive.com/s/4485/m/23353/l/484073-installing-frcsim-manually-mac-osx">Installing FRCSim Manually (Mac OSX)</a></li>
+<li><a href="http://wpilib.screenstepslive.com/s/4485/m/23353/l/228979-installing-frcsim-manually-ubuntu">Installing FRCSim Manually (Ubuntu)</a></li>
+<li><a href="http://wpilib.screenstepslive.com/s/4485/m/13810/l/145002-installing-eclipse-c-java">Installing Eclipse (C++/Java)</a></li>
+<li><a href="http://wpilib.screenstepslive.com/s/4485/m/13503/l/305566-current-software-revisions">Current Software Revisions</a></li>
+<li><a href="http://wpilib.screenstepslive.com/s/4485/m/13810/l/483574-c-java-plugin-changelog">C++\Java Plugin Changelog</a></li>
+</ul>
+<p id="more-recent-updates"><a href="http://wpilib.screenstepslive.com/s/4485/recent">More</a></p>
+</div>
+<div class="screensteps-sidebar-widget" id="sidebar-comments">
+<h3>Report Errors</h3>
+<p id="comments-count"><a href="http://wpilib.screenstepslive.com/s/4485/m/50711/l/481750-using-grip-for-the-2016-game#comments-wrapper">0</a> for this article</p>
+</div>
+
+
+</div>
+<div id="screensteps-main-content-wrapper" role="main">
+<div id="screensteps-main-content">
+<div id="screensteps-document">
+<div id="screensteps-description">
+<div class="screensteps-next-prev-navigation">
+<ul>
+<li class="previous">
+<strong>Prev</strong>: <a href="http://wpilib.screenstepslive.com/s/4485/m/50711/l/479908-reading-array-values-published-by-networktables">Reading array values published by NetworkTables</a>
+</li>
+</ul>
+</div>
+
+<h1 class="lesson">Using GRIP for the 2016 game</h1>
+<div class="description">
+<p>GRIP can be used to locate goals for the FIRST Stronghold by using a series of thresholding and finding contours. This page describes the algorithm that was used. You should download the set of sample images from the WPILib project on <a href="http://usfirst.collab.net./">http://usfirst.collab.net.</a> The idea is to load up all the images into a multi image source and test your algorithms by cycling through the pictures.</p>
+</div>
+
+</div>
+<div id="screensteps-steps">
+<div class="step" data-step-uuid="55edac84-e1d8-4e44-9d6d-e822b8b34f7d">
+<h2 id="SelectAllTheVisionSamplesAsMultiImageSource">Select all the vision samples as multi image source</h2>
+<div>
+<div class="image clearfix">
+<a href="http://wpilib.screenstepslive.com/s/4485/m/50711/l/481750-using-grip-for-the-2016-game/show_image?image_id=8068283" alt="" rel="prettyPhoto"><img alt="Select all the vision samples as multi image source" src="./Using GRIP for the 2016 game _ GRIP - Graphical Image Processing _ 2016 FRC Control System_files/feff87bc-2eb2-46eb-b762-64c210abb0a8_display.png"></a>
+<a href="http://wpilib.screenstepslive.com/s/4485/m/50711/l/481750-using-grip-for-the-2016-game/show_image?image_id=8068283" class="preview_image" rel="prettyPhoto" target="_blank">Zoom</a>
+</div>
+
+<div class="instructions"><p>Click the Add images button to create the multi-image source, then select all the images from the directory where they were unzipped.</p></div>
+<div class="clear"></div>
+</div>
+</div>
+<div class="step" data-step-uuid="65ab7ee9-3548-4728-b603-179bf5c32d58">
+<h2 id="ImagesAreTooBig(maybe)">Images are too big (maybe)</h2>
+<div>
+<div class="image clearfix">
+<a href="http://wpilib.screenstepslive.com/s/4485/m/50711/l/481750-using-grip-for-the-2016-game/show_image?image_id=8068286" alt="" rel="prettyPhoto"><img alt="Images are too big (maybe)" src="./Using GRIP for the 2016 game _ GRIP - Graphical Image Processing _ 2016 FRC Control System_files/cba3a1de-7c5d-4cb5-9424-1ede581cf8ad_display.png"></a>
+</div>
+
+<div class="instructions"><p>I decided that in this example the images were too big and would work just as well if they were resized. That may or may not but true, but it made the pictures small enough to capture easily for this set of examples. You can decide based on your processor and experience whether you want to resize them or not. The images are previewed by pressing the preview button shown above.</p></div>
+<div class="clear"></div>
+</div>
+</div>
+<div class="step" data-step-uuid="e35f9500-bc2b-4c29-ad3f-925e320ddfc0">
+<h2 id="ResizedImages">Resized images</h2>
+<div>
+<div class="image clearfix">
+<a href="http://wpilib.screenstepslive.com/s/4485/m/50711/l/481750-using-grip-for-the-2016-game/show_image?image_id=8068289" alt="" rel="prettyPhoto"><img alt="Resized images" src="./Using GRIP for the 2016 game _ GRIP - Graphical Image Processing _ 2016 FRC Control System_files/acfa3530-6a43-4b6e-95d3-f78fdb5b5a7f_display.png"></a>
+</div>
+
+<div class="instructions"><p>Changing the scale factor by 0.5 reduces the images to 1/4 the number of pixels and makes processing go much faster, and as said before, fits much better for this tutorial. In this example, the full size image preview is turned off and the smaller preview image is turned on. And, the output of the image source is sent to the resize operation.</p></div>
+<div class="clear"></div>
+</div>
+</div>
+<div class="step" data-step-uuid="00cc76c9-f5b7-4680-b9ff-3fb75e6612b2">
+<h2 id="UseHsvThresholdOperationToDetectTheTargets">Use HSV Threshold operation to detect the targets</h2>
+<div>
+<div class="image clearfix">
+<a href="http://wpilib.screenstepslive.com/s/4485/m/50711/l/481750-using-grip-for-the-2016-game/show_image?image_id=8068292" alt="" rel="prettyPhoto"><img alt="Use HSV Threshold operation to detect the targets" src="./Using GRIP for the 2016 game _ GRIP - Graphical Image Processing _ 2016 FRC Control System_files/398a9639-aaae-462a-abae-6f5e2d4d8f5f_display.png"></a>
+</div>
+
+<div class="instructions"><p>Since the targets were illuminated with a constant color ringlight, it's possible to do a threshold operation to detect only the pixels that are that color. What's left is a binary image, that is an image with 1's where the color matched the parameters and 0's where it didn't. By narrowing the H, S, and L parameters, only the target is included in the output image. You can see that the there are some small artifacts left over, but mostly, it is just the vision targets in the frame.</p></div>
+<div class="clear"></div>
+</div>
+</div>
+<div class="step" data-step-uuid="e1701886-2b62-4359-9369-ed9429f13a5c">
+<h2 id="FindContoursInTheImage">Find contours in the image</h2>
+<div>
+<div class="image clearfix">
+<a href="http://wpilib.screenstepslive.com/s/4485/m/50711/l/481750-using-grip-for-the-2016-game/show_image?image_id=8068295" alt="" rel="prettyPhoto"><img alt="Find contours in the image" src="./Using GRIP for the 2016 game _ GRIP - Graphical Image Processing _ 2016 FRC Control System_files/ae65cb67-df7b-420c-830b-2f4f0e6b56b8_display.png"></a>
+<a href="http://wpilib.screenstepslive.com/s/4485/m/50711/l/481750-using-grip-for-the-2016-game/show_image?image_id=8068295" class="preview_image" rel="prettyPhoto" target="_blank">Zoom</a>
+</div>
+
+<div class="instructions"><p>Now we can find contours in the image - that is looked for connected sets of pixels and the surrounding box. Notice that 17 contours were found that included all the smaller artifacts in the image. It's helpful to select the Color Contours checkbox to more distinctly color them to see exactly what was detected.</p></div>
+<div class="clear"></div>
+</div>
+</div>
+<div class="step" data-step-uuid="339929f2-ae84-4596-8bfa-2a3fe7926dbf">
+<h2 id="FilteringTheDiscoveredContours">Filtering the discovered contours</h2>
+<div>
+<div class="image clearfix">
+<a href="http://wpilib.screenstepslive.com/s/4485/m/50711/l/481750-using-grip-for-the-2016-game/show_image?image_id=8068298" alt="" rel="prettyPhoto"><img alt="Filtering the discovered contours" src="./Using GRIP for the 2016 game _ GRIP - Graphical Image Processing _ 2016 FRC Control System_files/192cd80b-2cf9-4e25-9f8d-a4fd06f09e47_display.png"></a>
+</div>
+
+<div class="instructions"><p>Filtering the contours with a minimum area of 400 pixels gets down to a single contour found. Setting these filters can reduce the number of artifacts that the robot program needs to deal with.</p></div>
+<div class="clear"></div>
+</div>
+</div>
+<div class="step" data-step-uuid="516d4617-3df9-4c25-ba9e-942a2e76ca7e">
+<h2 id="PublishingTheResultsToNetworkTables">Publishing the results to network tables</h2>
+<div>
+<div class="image clearfix">
+<a href="http://wpilib.screenstepslive.com/s/4485/m/50711/l/481750-using-grip-for-the-2016-game/show_image?image_id=8068301" alt="" rel="prettyPhoto"><img alt="Publishing the results to network tables" src="./Using GRIP for the 2016 game _ GRIP - Graphical Image Processing _ 2016 FRC Control System_files/02a58c87-1f39-4f47-bb20-54a9ffb68e8e_display.png"></a>
+</div>
+
+<div class="instructions"><p>The Publish ContoursReport step will publish the selected values to network tables. A good way of determining exactly what's published is to run the Outline Viewer program that's one of the tools in the &lt;username&gt;/wpilib/tools directory after you installed the eclipse plugins.</p></div>
+<div class="clear"></div>
+</div>
+</div>
+<div class="step" data-step-uuid="ef4e68bb-a2c8-4ac8-852d-93ab30e092f6">
+<h2 id="ChangingFilterValues">Changing filter values</h2>
+<div>
+<div class="image clearfix">
+<a href="http://wpilib.screenstepslive.com/s/4485/m/50711/l/481750-using-grip-for-the-2016-game/show_image?image_id=8068304" alt="" rel="prettyPhoto"><img alt="Changing filter values" src="./Using GRIP for the 2016 game _ GRIP - Graphical Image Processing _ 2016 FRC Control System_files/588df322-f8a8-4dd7-85c4-5cbc0ef8fd20_display.png"></a>
+</div>
+
+<div class="instructions"><p>Reducing the minimum area from 400 to 300 got both sides of the tower targets, but for other images it might let in artifacts that are undesirable.</p></div>
+<div class="clear"></div>
+</div>
+</div>
+<div class="step" data-step-uuid="5afcf7f9-1cca-4e6c-a18c-62cdbf2f3011">
+<h2 id="AllowingOtherColors">Allowing other colors</h2>
+<div>
+<div class="image clearfix">
+<a href="http://wpilib.screenstepslive.com/s/4485/m/50711/l/481750-using-grip-for-the-2016-game/show_image?image_id=8068307" alt="" rel="prettyPhoto"><img alt="Allowing other colors" src="./Using GRIP for the 2016 game _ GRIP - Graphical Image Processing _ 2016 FRC Control System_files/9305c9ec-5f66-4948-9762-53d5be3d8dbb_display.png"></a>
+</div>
+
+<div class="instructions"><p>In some of the images, the two faces were slightly different colors. One way of handling this case is to open up the parameters enough to accept both, but that has the downside of accepting everything in between. Another way to solve this is to have two separate filters, one for the first color and one for the second color. Then two binary images can be created and they can be ORd together to make a single composite binary image that includes both. That is shown in this step. The final pipeline is shown here. A dilate operation was added to improve the quality of the results which adds additional pixels around broken images to try to make them appear as a single object rather than multiple objects.</p></div>
+<div class="clear"></div>
+</div>
+</div>
+
+<div class="screensteps-next-prev-navigation">
+<ul>
+<li class="previous">
+<strong>Prev</strong>: <a href="http://wpilib.screenstepslive.com/s/4485/m/50711/l/479908-reading-array-values-published-by-networktables">Reading array values published by NetworkTables</a>
+</li>
+</ul>
+</div>
+
+</div>
+</div>
+</div>
+<div class="no-comments" id="comments-wrapper">
+<h2 id="comments-count">Report Errors (0)</h2>
+<div id="comments-content">
+<div id="comments">
+
+</div>
+<div id="add-comment">
+<h3>Use this form to report any errors with the documentation. 
+For help with WPILib, please use the FIRST Forums at http://forums.usfirst.org
+For reporting WPILib bugs, please report using the WPILib Tracker https://usfirst.collab.net/sf/tracker/do/listArtifacts/projects.wpilib/tracker.4_defects</h3>
+<div id="comment-notice">
+
+
+</div>
+
+<script type="text/javascript" charset="utf-8">
+  ScreenStepsLiveSpamCheck = function() {
+      var key = document.getElementById('comment_spam_check_key').value;
+    var sig = '';
+    for (var x = 0; x< key.length; x++ ) {
+       sig += key.charCodeAt(x)+13;
+    }
+    document.getElementById('comment_spam_check_sig').value = sig; 
+    return true;
+  };
+</script>
+<form accept-charset="UTF-8" action="http://wpilib.screenstepslive.com/s/4485/comments?lesson_id=481750-using-grip-for-the-2016-game" id="comment-form" method="post" onclick="return ScreenStepsLiveSpamCheck();"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="✓"><input name="authenticity_token" type="hidden" value="z1i57l+xnaK3+TwID3JgHlVJJihNlERmcIGyIrbPZ1c="></div><div class="field-row">
+<label class="required" for="comment_name">Name*</label>
+<input id="comment-name" name="comment[name]" size="30" type="text">
+</div>
+<div class="field-row">
+<label class="required" for="comment_email">Email*</label>
+<input id="comment-email" name="comment[email]" size="30" type="text">
+</div>
+
+<input id="comment_manual_id" name="comment[manual_id]" type="hidden" value="50711">
+<input id="comment_space_id" name="comment[space_id]" type="hidden" value="4485">
+<input id="comment_spam_check_key" name="comment[spam_check_key]" type="hidden" value="ammiok8ckJh9">
+<input id="comment_spam_check_sig" name="comment[spam_check_sig]" type="hidden">
+<div class="field-row">
+<label class="required" for="comment_comment">Report</label>
+<textarea cols="40" id="comment-comment" name="comment[comment]" rows="20"></textarea>
+</div>
+<div class="field-row">
+<label for="comment_subscribe" id="subscribe-label"> Ignore</label>
+<input name="comment[subscribe]" type="hidden" value="0"><input id="comment_subscribe" name="comment[subscribe]" type="checkbox" value="1">
+<span class="help"> Ignore</span>
+</div>
+<div class="field-row"><label for="recaptcha" id="recaptcha-label">Are you human?</label>
+<div id="recaptcha-wrapper">
+<script type="text/javascript" src="./Using GRIP for the 2016 game _ GRIP - Graphical Image Processing _ 2016 FRC Control System_files/challenge"></script><script type="text/javascript" src="./Using GRIP for the 2016 game _ GRIP - Graphical Image Processing _ 2016 FRC Control System_files/recaptcha.js"></script><div id="recaptcha_widget_div" class=" recaptcha_nothad_incorrect_sol recaptcha_isnot_showing_audio"><div id="recaptcha_area"><table id="recaptcha_table" class="recaptchatable recaptcha_theme_red"> <tbody><tr> <td colspan="6" class="recaptcha_r1_c1"></td> </tr> <tr> <td class="recaptcha_r2_c1"></td> <td colspan="4" class="recaptcha_image_cell"><center><div id="recaptcha_image" style="width: 300px; height: 57px;"><img id="recaptcha_challenge_image" alt="reCAPTCHA challenge image" height="57" width="300" src="./Using GRIP for the 2016 game _ GRIP - Graphical Image Processing _ 2016 FRC Control System_files/image"></div></center></td> <td class="recaptcha_r2_c2"></td> </tr> <tr> <td rowspan="6" class="recaptcha_r3_c1"></td> <td colspan="4" class="recaptcha_r3_c2"></td> <td rowspan="6" class="recaptcha_r3_c3"></td> </tr> <tr> <td rowspan="3" class="recaptcha_r4_c1" height="49"> <div class="recaptcha_input_area"> <span id="recaptcha_challenge_field_holder" style="display: none;"><input type="hidden" name="recaptcha_challenge_field" id="recaptcha_challenge_field" value="03AHJ_Vuv59GEPI0-g3fmeeCRs1HVJgrbXt0R0VuaB0iRumrB-wE7nvko5oITokvQImGTvtKKT41PAqbVgfA26vR5OvuRXhjVZTzBYOGHBA1gG7vpK6rMr82ad4sRq_5bcdyUU2TC5-BqgRfT00ISQnbpu9rW2mOAYPJHesBaoxVSamNnWq2kjaNDvShRrS_Vrrmt6geWqxmUmlrDHMH1WluPArFmzE4qlIkecm6ChzGm3kztP2GEaw6i-H4Np5axXetdTRzf04pO4M4SNAyOzq1ame-Sx4EcZEA"></span><input name="recaptcha_response_field" id="recaptcha_response_field" type="text" autocorrect="off" autocapitalize="off" placeholder="Type the text" autocomplete="off"> <span id="recaptcha_privacy" class="recaptcha_only_if_privacy"><a href="http://www.google.com/intl/en/policies/" target="_blank">Privacy &amp; Terms</a></span> </div> </td> <td rowspan="4" class="recaptcha_r4_c2"></td> <td><a id="recaptcha_reload_btn" title="Get a new challenge"><img id="recaptcha_reload" width="25" height="17" src="./Using GRIP for the 2016 game _ GRIP - Graphical Image Processing _ 2016 FRC Control System_files/refresh.gif" alt="Get a new challenge"></a></td> <td rowspan="4" class="recaptcha_r4_c4"></td> </tr> <tr> <td><a id="recaptcha_switch_audio_btn" class="recaptcha_only_if_image" title="Get an audio challenge"><img id="recaptcha_switch_audio" width="25" height="16" alt="Get an audio challenge" src="./Using GRIP for the 2016 game _ GRIP - Graphical Image Processing _ 2016 FRC Control System_files/audio.gif"></a><a id="recaptcha_switch_img_btn" class="recaptcha_only_if_audio" title="Get a visual challenge"><img id="recaptcha_switch_img" width="25" height="16" alt="Get a visual challenge" src="./Using GRIP for the 2016 game _ GRIP - Graphical Image Processing _ 2016 FRC Control System_files/text.gif"></a></td> </tr> <tr> <td><a id="recaptcha_whatsthis_btn" title="Help"><img id="recaptcha_whatsthis" width="25" height="16" src="./Using GRIP for the 2016 game _ GRIP - Graphical Image Processing _ 2016 FRC Control System_files/help.gif" alt="Help"></a></td> </tr> <tr> <td class="recaptcha_r7_c1"></td> <td class="recaptcha_r8_c1"></td> </tr> </tbody></table> </div></div>
+<noscript>
+  &lt;iframe src="http://www.google.com/recaptcha/api/noscript?k=6LfXLgcAAAAAAKIkeQErdtVPLm5YcB31B0XRtfep" height="300" width="500" style="border:none;"&gt;&lt;/iframe&gt;&lt;br/&gt;
+  &lt;textarea name="recaptcha_challenge_field" rows="3" cols="40"&gt;&lt;/textarea&gt;
+  &lt;input type="hidden" name="recaptcha_response_field" value="manual_challenge"/&gt;</noscript>
+
+</div>
+</div>
+<div class="field-row"><input id="create-comment-button" name="commit" type="submit" value="Submit Report"></div>
+</form>
+
+
+
+</div>
+</div>
+</div>
+
+
+</div>
+</div>
+
+<div data-logged-in-check-url="https://Wpilib.screenstepslive.com/s/4485/user_nav" id="screensteps-admin-bar" style="display:none;">
+<div id="screensteps-admin-bar-inner">
+<ul>
+<li><a href="http://wpilib.screenstepslive.com/admin/spaces/4485/lessons/481750?manual_id=50711" target="_blank">View in admin portal</a></li>
+<li><a href="http://wpilib.screenstepslive.com/admin/lessons/481750/steps?manual_id=50711&amp;space_id=4485" target="_blank">Edit content on web</a></li>
+<li><a href="screensteps://Wpilib.screenstepslive.com/open/s/4485/m/50711/a/481750?checkout=1">Edit in desktop</a></li>
+</ul>
+<span>ScreenSteps</span>
+<div class="screensteps-clear"></div>
+</div>
+</div>
+
+            </div>
+            <!-- Main Content End -->
+        </div>
+
+        <div class="footer" id="footer">
+            <div class="footer-text">
+                © 2015 <a href="http://www.firstinspires.org/" target="_blank">FIRST&nbsp;</a><br>
+            </div>
+        </div>
+    </div>
+
+
+<style>[href^="https://www.firstload.com/affiliate/"],
+[href^="http://www.firstload.de/affiliate/"],
+[href^="http://www.firstload.com/affiliate/"],
+[href^="http://www.firstclass-download.com/"]
+{display:none !important;}</style><div id="goodblock-react-base" data-goodblock-initialized="true" data-goodblock-content-script-num="1" data-goodblock-remount-app="false"><div data-reactid=".0" id="goodblock-base-elem"><span data-reactid=".0.0"><div style="color:#000;background-color:rgba(0, 0, 0, 0.7);transition:background-color 0.3s;left:10px !important;bottom:30px !important;width:26px !important;height:26px !important;padding:6px !important;display:block;z-index:2147483647 !important;position:fixed !important;border-radius:50% !important;box-sizing:content-box !important;cursor:pointer !important;" data-goodblock-elem="icon" data-reactid=".0.0.$=1$goodblock-icon-holder" class=""><img src="chrome-extension://oihioooajpekhlgknlekbifgcjlfehje/img/browsericons/icon60.png" style="width:26px !important;height:26px !important;max-width:none !important;" data-goodblock-elem="icon-img" data-reactid=".0.0.$=1$goodblock-icon-holder.0"><span data-reactid=".0.0.$=1$goodblock-icon-holder.1"></span></div></span></div></div><iframe src="about:blank" style="height: 0px; width: 0px; visibility: hidden; border: none; display: none;">This frame prevents back/forward cache problems in Safari.</iframe><style>[href^="http://www.google.com/aclk?"]
+{display:none !important;}</style></body></html>
