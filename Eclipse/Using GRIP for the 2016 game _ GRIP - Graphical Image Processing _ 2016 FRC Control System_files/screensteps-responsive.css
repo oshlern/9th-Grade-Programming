@@ -1,0 +1,430 @@
+/* Custom responsive stylesheet by Webs Coder [Rafiul Alom] */
+
+img{
+  max-width: 100%;
+  height: auto;
+  width:auto;
+  border: none;
+  outline: none;
+}
+
+#company-logo img {
+  height: inherit;
+}
+
+#screensteps-sidebar-toggle{
+  display: none;
+}
+
+@media only screen and (max-width: 1200px){
+  #header.screenstepslive-header-toggle {
+    min-width: 300px;
+  }
+
+  #screensteps-admin-bar-inner {
+    min-width: 300px;
+    max-width: 970px;
+    margin: 0 auto;
+  }
+
+  #header.screenstepslive-header-toggle .container {
+    min-width: 300px;
+    max-width: 970px;
+    margin: 0 auto;
+    padding: 0 15px;
+  }
+  #screensteps-content-wrapper {
+    min-width: 300px;
+    max-width: 970px;
+    margin: 0 auto;
+    padding: 0 15px;
+    padding-top: 30px;
+  }
+  #header.screenstepslive-header-toggle #navigation-container-inner{
+    max-width: 970px;
+    margin: 0 auto;
+    float: none;
+    padding: 0 15px;
+  }
+  #screensteps-content-wrapper{
+    overflow: hidden;
+  }
+}
+@media only screen and (max-width: 992px){
+
+  #screensteps-admin-bar-inner {
+    /*max-width: 725px;*/
+  }
+
+  #header.screenstepslive-header-toggle .container {
+    /*max-width: 725px;*/
+    padding: 0 15px;
+  }
+  #screensteps-content-wrapper {
+    /*max-width: 725px;*/
+    margin: 0 auto;
+    padding: 0 15px;
+    padding-top: 20px;
+  }
+  #navigation-container{
+    padding: 0;
+  }
+  #header #navigation-container-inner{
+    /*max-width: 725px;*/
+    padding: 0 15px;
+  }
+  #screensteps-sidebar{
+    width: 180px;
+  }
+
+  #screensteps-sidebar #sidebar-search form{
+    background: none;
+  }
+  #sidebar-search p.search-form{
+    background: #333;
+  }
+  #screensteps-sidebar #sidebar-search input.search-field{
+    width: 105px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    /*color: #fff;*/
+  }
+  #screensteps-sidebar #sidebar-search input.search-submit{
+    border: 1px solid #ccc;
+    /*background: #999;*/
+    text-indent: 0;
+    width: auto;
+    height: 34px;
+    padding: 0 4px;
+  }
+
+
+  #screensteps-content-wrapper.left-sidebar #screensteps-main-content-wrapper{
+    margin-left: 200px;
+  }
+  #comments-wrapper #add-comment form h3, #comments-wrapper #add-comment form label {
+     text-align: left;
+     float:none;
+     width: auto;
+     display: block;
+   }
+}
+
+@media only screen and (max-width: 767px){
+
+  #header.screenstepslive-header-toggle .container, #screensteps-admin-bar-inner {
+    max-width: 725px;
+  }
+
+  #screensteps-content-wrapper #screensteps-main-content-wrapper {
+    margin-right: 0;
+  }
+
+  #header.screenstepslive-header-toggle .container{
+    max-width: 725px;
+  }
+
+  #header.screenstepslive-header-toggle #company-logo {
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+  .screensteps-next-prev-navigation ul li{
+    width: 48%;
+  }
+
+  #screensteps-content-wrapper .asset-list li a {
+    line-height:120%;
+  }
+
+  #screensteps-content-wrapper {
+    max-width: 725px;
+    padding-bottom: 10px;
+  }
+  #header.screenstepslive-header-toggle #navigation-container-inner{
+    max-width: 725px;
+  }
+  #screensteps-sidebar{
+    width: 100%;
+    float: none;
+    margin-bottom: 20px;
+  }
+  #screensteps-content-wrapper.left-sidebar #screensteps-main-content-wrapper{
+    margin-left: 0;
+  }
+  #screensteps-sidebar #screensteps-rss{
+    margin-bottom: 20px;
+  }
+  #screensteps-sidebar #sidebar-chapters{
+    margin-top: 0;
+    margin-bottom: 20px;
+  }
+
+  #screensteps-content-wrapper.site-index #screensteps-rss {
+    margin-bottom: 10px;
+  }
+
+  #screensteps-sidebar div.screensteps-sidebar-widget{
+    margin-top: 0;
+    margin-bottom: 20px;
+  }
+  #header.screenstepslive-header-toggle ul.nav li {
+    padding: 13px 7px;
+    font-size: 12px !important;
+  }
+  #screensteps-content-wrapper.lesson #screensteps-sidebar #sidebar-search{
+    margin-bottom: 20px;
+    margin-top: 20px;
+  }
+  #screensteps-breadcrumb{
+    padding-bottom: 0;
+  }
+  #navigation-container{
+    height: auto;
+    padding: 5px 0;
+  }
+  #navigation-container{
+    display: none;
+  }
+
+  #screensteps-sidebar-toggle{
+    display: block;
+    width: 30px;
+    line-height: 30px;
+    font-size: 25px;
+    height: 30px;
+    margin: 0 auto;
+    max-width: 550px;
+    padding: 0;
+    margin-bottom: 20px;
+    color: #fff;
+    font-weight: bold;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    border: none;
+    background: none;
+  }
+  #screensteps-sidebar{
+    /*padding-top: 30px;*/
+    display: none;
+  }
+  #screensteps-inner-content h2{
+    font-size: 18px;
+    line-height: 22px;
+  }
+  #screensteps-inner-content #manual-contents li.chapter{
+    padding-top: 20px;
+    margin-top: 20px;
+  }
+
+  #screensteps-inner-content #manual-contents li:first-child {
+    margin-top: 0;
+    padding-top: 0;
+  }
+
+  #screensteps-inner-content #found-lessons .posted-at {
+    float: none;
+    width: 100%;
+    color: #666;
+    text-align: left;
+    margin: 0 !important;
+  }
+
+  #screensteps-sidebar #sidebar-search form {
+    width: auto;
+  }
+  #screensteps-sidebar #sidebar-search input.search-field{
+    width: 200px;
+  }
+
+  #comments-wrapper #add-comment input#create-comment-button {
+    margin-left: 0;
+  }
+
+}
+
+@media only screen and (max-width: 600px){
+  #screensteps-admin-bar { display: none;}
+  #screensteps-admin-bar ul li { float: none;}
+  #header.screenstepslive-header-toggle .container {
+    max-width: 90%;
+  }
+  #header.screenstepslive-header-toggle #company-name {
+    padding-left: 0;
+  }
+  #screensteps-content-wrapper {
+    max-width: 90%;
+  }
+  #header.screenstepslive-header-toggle #navigation-container-inner{
+    max-width: 90%;
+  }
+  #navigation-container{
+    height: auto;
+    padding: 5px 0;
+  }
+  #header.screenstepslive-header-toggle ul.nav{
+    border: none;
+  }
+  #header.screenstepslive-header-toggle ul.nav li {
+    padding: 0;
+    float: none;
+    text-align: left;
+    font-size: 14px !important;
+    border: none;
+  }
+  #header.screenstepslive-header-toggle ul.nav li a{
+    padding: 7px 0;
+    display: block;
+    border-bottom: 1px solid #2F4B6F;
+  }
+  #header.screenstepslive-header-toggle ul.nav li a:hover{
+    text-decoration: none;
+  }
+  #header.screenstepslive-header-toggle #admin-nav, #header.screenstepslive-header-toggle #site-nav {
+    float: none;
+  }
+
+  #header.screenstepslive-header-toggle ul#admin-nav li {
+    float: none;
+    padding-left:0;
+  }
+
+}
+
+@media only screen and (max-width: 479px){
+  body{
+    min-width: 320px;
+  }
+  #header.screenstepslive-header-toggle .container {
+    max-width: 90%;
+  }
+  #screensteps-content-wrapper {
+    max-width: 90%;
+  }
+  #header.screenstepslive-header-toggle #navigation-container-inner{
+    max-width: 90%;
+  }
+  #screensteps-search p.search-form{
+    background: #333;
+  }
+  #screensteps-search form .search-field{
+    width: 60%;
+    border: 1px solid #ccc;
+    color: #fff;
+  }
+  #screensteps-search form .search-submit{
+    border: 1px solid #ccc;
+    background: #999;
+    text-indent: 0;
+    width: auto;
+  }
+  #header.screenstepslive-header-toggle #company-name{
+    text-align: center;
+    display: block;
+  }
+  #header.screenstepslive-header-toggle #company-logo {
+  display: block;
+  clear: left;
+  width: auto;
+  margin: 0;
+  padding: 5px 0;
+  float: none;
+  height: 60px;
+  text-align: center;
+  }
+
+  #navigation-container{
+    height: auto;
+    padding: 5px 0;
+  }
+  #header.screenstepslive-header-toggle ul.nav{
+    border: none;
+  }
+  #header.screenstepslive-header-toggle ul.nav li {
+    padding: 0;
+    float: none;
+    font-size: 14px !important;
+    border: none;
+  }
+  #header.screenstepslive-header-toggle ul.nav li a{
+    padding: 7px 0;
+    display: block;
+    border-bottom: 1px solid #2F4B6F;
+  }
+  #header.screenstepslive-header-toggle ul.nav li a:hover{
+    text-decoration: none;
+  }
+  #header.screenstepslive-header-toggle #company-name{
+    float: none;
+    text-align: center;
+  }
+  .screensteps-next-prev-navigation ul li{
+    width: 100%;
+    float: none;
+    display: block;
+    background: none;
+    margin-bottom: 10px;
+    padding-left: 0 !important;
+    margin-left: 0 !important;
+  }
+  .screensteps-next-prev-navigation ul li.next{
+    text-align: left;
+    background: none;
+  }
+  .screensteps-next-prev-navigation ul li.previous{
+    background: none;
+  }
+  #comments-wrapper #add-comment input#create-comment-button{
+    margin: 0;
+  }
+
+  #screensteps-inner-content .asset-list, #screensteps-inner-content #manual-contents .chapter-contents {
+    font-size: 14px !important;
+  }
+  #screensteps-inner-content #manual-contents .chapter-contents {
+    padding-left:20px;
+  }
+
+}
+
+@media only screen and (max-width: 320px){
+  body{
+    min-width: 320px;
+  }
+  #screensteps-search form .search-field{
+    width: auto;
+  }
+  #screensteps-inner-content .asset-list, #screensteps-inner-content #manual-contents .chapter-contents {
+    font-size: 14px !important;
+  }
+
+  #comments-wrapper #add-comment textarea {
+    width: 240px;
+    height:80px;
+  }
+
+  #comments-wrapper .help {
+    font-size: 12px !important;
+  }
+
+  .input-prompt {
+    display:inline-block;
+    max-width:120px;
+    overflow:hidden;
+    text-overflow:ellipsis;
+    white-space:nowrap;
+  }
+}
+
+@media (max-width: 444px) {
+
+.recaptchatable #recaptcha_image {
+margin: 0 !important;
+width: 200px !important;
+}
+.recaptchatable .recaptcha_r1_c1, .recaptchatable .recaptcha_r3_c1, .recaptchatable .recaptcha_r3_c2, .recaptchatable .recaptcha_r7_c1, .recaptchatable .recaptcha_r8_c1, .recaptchatable .recaptcha_r3_c3, .recaptchatable .recaptcha_r2_c1, .recaptchatable .recaptcha_r4_c1, .recaptchatable .recaptcha_r4_c2, .recaptchatable .recaptcha_r4_c4, .recaptchatable .recaptcha_image_cell {
+
+background: none !important;
+}
+
+}

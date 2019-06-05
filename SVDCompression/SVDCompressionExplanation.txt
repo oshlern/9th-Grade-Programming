@@ -1,0 +1,11 @@
+  This algorithm is a simple implementation of k-rank approximation using openCV and numpy.
+It calculates the singular values of each color separately, replaces a percentage of them with 0's, and reconstructs the image of each color.
+Lastly, it puts it back together and displays it, the compressed image.
+  All of these images only use the first 10% of their singular values while retaining a relatively accurate approximation.
+The file size usually increase after compression, an inflation effect which I believe was covered by others.
+However, 2 out of the seven did decrease in size.
+
+  One problem has occurred (which I am working to fix):
+There are spots which are mapped to the maximum value for some colors, and they appear is anomalous bright spots in an otherwise possibly dark region.
+
+-Osher L

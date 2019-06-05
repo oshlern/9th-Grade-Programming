@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="org.usfirst.frc4904.standard.subsystems.chassis.Chassis"/>
+<fullyQualifiedTypeName name="org.usfirst.frc4904.standard.subsystems.chassis.TankDriveShifting"/>
+<fullyQualifiedTypeName name="edu.wpi.first.wpilibj.PIDController"/>
+<fullyQualifiedTypeName name="edu.wpi.first.wpilibj.PIDOutput"/>
+<fullyQualifiedTypeName name="edu.wpi.first.wpilibj.PIDSource"/>
+<fullyQualifiedTypeName name="com.kauailabs.navx_mxp.AHRS"/>
+<fullyQualifiedTypeName name="edu.wpi.first.wpilibj.SPI"/>
+<fullyQualifiedTypeName name="edu.wpi.first.wpilibj.SerialPort"/>
+<fullyQualifiedTypeName name="edu.wpi.first.wpilibj.SerialPort.Port"/>
+<fullyQualifiedTypeName name="org.usfirst.frc4904.robot.DriverStationMap"/>
+<fullyQualifiedTypeName name="edu.wpi.first.wpilibj.CANTalon"/>
+<fullyQualifiedTypeName name="edu.wpi.first.wpilibj.PIDSourceType"/>
+<fullyQualifiedTypeName name="java.awt.image.BufferedImage"/>
+<fullyQualifiedTypeName name="javax.swing.ImageIcon"/>
+<fullyQualifiedTypeName name="javax.swing.JFrame"/>
+<fullyQualifiedTypeName name="java.awt.FlowLayout"/>
+<fullyQualifiedTypeName name="javax.swing.JLabel"/>
+<fullyQualifiedTypeName name="java.awt.image.DataBufferByte"/>
+<fullyQualifiedTypeName name="org.opencv.highgui.Highgui"/>
+</qualifiedTypeNameHistroy>
